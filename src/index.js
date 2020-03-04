@@ -16,7 +16,7 @@ module.exports = function check(str, bracketsConfig) {
         return arrayBrackets;
     }, []).join('|');
 
-    let regExpBrackets = RegExp(regExpStrBrackets,'g');
+    let regExpBrackets = new RegExp(regExpStrBrackets,'g');
 
     let strBrackets = str;
 
